@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petal Palace</title>
+  <link rel="stylesheet" href="flower.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Petal Palace</h1>
+  </header>
+  <main>
+    <section id="carousel">
+      <h2>Flower Image Carousel</h2>
+      <div class="carousel">
+        <img src="dahila.jpg" alt="Dahila">
+        <img src="hydrangea.jpg" alt="Hydrangea" >
+        <img src="saffron.jpg" alt="Saffron">
+        <img src="Bleeding Heart.jpg" alt="bleeding heart">
+      </div>
+      <div class="carousel-buttons">
+        <button id="prev">Previous</button>
+        <button id="next">Next</button>
+      </div>
+    </section>
+    <section id="flowers">
+      <h2>Our Flowers</h2>
+      <div class="flower" data-name="Rose" data-price="5">
+        <img src="rose.jpg" alt="Rose">
+        <p>Rose - $5</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="flower" data-name="Tulip" data-price="3">
+        <img src="tulip.jpg" alt="Tulip">
+        <p>Tulip - $3</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="flower" data-name="Lavender" data-price="9">
+        <img src="lavender.jpg" alt="lavender">
+        <p>Sunflower - $9</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="flower" data-name="Daisy" data-price="2">
+        <img src="daisy.jpg" alt="Daisy">
+        <p>Daisy - $2</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="flower" data-name="Lily" data-price="6">
+        <img src="lily.jpg" alt="Lily">
+        <p>Lily - $6</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="flower" data-name="Orchid" data-price="7">
+        <img src="orchid.jpg" alt="Orchid">
+        <p>Orchid - $7</p>S
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="flower" data-name="daffodil" data-price="5">
+        <img src="daffodil.jpg" alt="Daffodil">
+        <p>Orchid - $5</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+    <section id="cart">
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="total">Total: $0</p>
+      <button id="checkout">Checkout</button>
+    </section>
+    <section id="jokes">
+      <h2>Daily Jokes</h2>
+      <div id="joke"></div>
+      <button id="fetch-joke">Get a Joke</button>
+    </section>
+    <section id="quiz">
+      <h2>Flower Quiz</h2>
+      <form id="quiz-form">
+        <div class="question">
+          <label>What is the national flower of Japan?</label>
+          <input type="text" name="q1">
+        </div>
+        <div class="question">
+          <label>Which flower is known as the symbol of love?</label>
+          <input type="text" name="q2">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="quiz-result"></div>
+    </section>
+    <section id="api-data">
+      <h2>Weather Data</h2>
+      <div id="weather"></div>
+      <button id="fetch-weather">Get Weather</button>
+    </section>
+  </main>
+  <script src="flower.js"></script>
+</body>
+</html>
